@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerActions : MonoBehaviour
 {
-    public TextMeshPro prompt;
+    public TMP_Text prompt;
     public float maxUseDistance = 5f;
     public Transform Camera;
     public LayerMask UseLayers;
