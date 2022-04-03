@@ -87,8 +87,6 @@ public class Door : Interactable
 
     public override void OnInteract()
     {
-        Transform Camera = getCamera();
-        LayerMask UseLayers = getUseLayers();
         if (Physics.Raycast(Camera.position, Camera.forward, out RaycastHit hit, maxUseDistance, UseLayers))
         {
             if (isOpen)

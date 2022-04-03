@@ -9,8 +9,8 @@ public abstract class Interactable : MonoBehaviour
     public TextMeshPro prompt;
     public string itemName;
     public float maxUseDistance = 5f;
-    private Transform Camera;
-    private LayerMask UseLayers;
+    public Transform Camera;
+    public LayerMask UseLayers;
 
     void Update()
     {
@@ -25,16 +25,6 @@ public abstract class Interactable : MonoBehaviour
         {
             prompt.gameObject.SetActive(false);
         }    
-    }
-
-    public Transform getCamera()
-    {
-        return Camera;
-    }
-
-    public LayerMask getUseLayers()
-    {
-        return UseLayers;
     }
 
     public abstract void OnInteract();
