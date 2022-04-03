@@ -17,8 +17,8 @@ public class PlayerActions : MonoBehaviour
         {
             prompt.SetText("Press \"E\" to interact with " + door.itemName);
             prompt.gameObject.SetActive(true);
-            prompt.transform.position = hit.point - (hit.point - Camera.position).normalized * 0.01f;
-            prompt.transform.rotation = Quaternion.LookRotation((hit.point - Camera.position).normalized);
+            //prompt.transform.position = hit.point - (hit.point - Camera.position).normalized * 0.01f;
+            //prompt.transform.rotation = Quaternion.LookRotation((hit.point - Camera.position).normalized);
         }
         else
         {
