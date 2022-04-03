@@ -58,7 +58,7 @@ public class Door : Interactable
 
     public void Close()
     {
-        if (!isOpen)
+        if (isOpen)
         {
             if (AnimationCoroutine != null)
             {
@@ -82,17 +82,6 @@ public class Door : Interactable
             transform.rotation = Quaternion.Slerp(startRotation, endRotation, time);
             yield return null;
             time += Time.deltaTime * speed;
-        }
-    }
-
-    public override void OnInteract()
-    {
-        if (Physics.Raycast(Camera.position, Camera.forward, out RaycastHit hit, maxUseDistance, UseLayers))
-        {
-            if (isOpen)
-                Close();
-            else
-                Open(transform.position);
         }
     }
 }
