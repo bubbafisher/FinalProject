@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelTransition : MonoBehaviour
 {
     public int sceneID;
-    void OnCollisionStay(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
         SceneManager.LoadScene(sceneID);
     }
