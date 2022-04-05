@@ -9,6 +9,14 @@ public class PlayerActions : MonoBehaviour
     public float maxUseDistance = 5f;
     public Transform Camera;
     public LayerMask UseLayers;
+    public GameObject eventSystem;
+    private bool isPaused = false;
+    private MenuController menuController;
+
+    void Start()
+    {
+        menuController = eventSystem.GetComponent<MenuController>();
+    }
 
     void Update()
     {
@@ -38,5 +46,20 @@ public class PlayerActions : MonoBehaviour
                     door.Open(transform.position);
             }
         }
+    }
+
+    public void OnPause()
+    {
+        if(!isPaused)
+        {
+            menuController.Pause();
+            isPaused = true;
+        }
+        else
+        {
+            menuController.UnPause();
+            isPaused = false;
+        }
+
     }
 }
