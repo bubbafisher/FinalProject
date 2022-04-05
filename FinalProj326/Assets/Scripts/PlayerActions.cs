@@ -52,12 +52,12 @@ public class PlayerActions : MonoBehaviour
     {
         if(!isPaused)
         {
-            menuController.Pause();
+            eventSystem.GetComponent<MenuController>().Pause();
             isPaused = true;
         }
         else
         {
-            menuController.UnPause();
+            eventSystem.GetComponent<MenuController>().UnPause();
             isPaused = false;
         }
 
