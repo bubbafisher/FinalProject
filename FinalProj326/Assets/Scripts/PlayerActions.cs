@@ -20,13 +20,27 @@ public class PlayerActions : MonoBehaviour
 
     void Update()
     {
-        if (Physics.Raycast(Camera.position, Camera.forward, out RaycastHit hit, maxUseDistance, UseLayers)&&
-            hit.collider.TryGetComponent<Door>(out Door door))
+        if (Physics.Raycast(Camera.position, Camera.forward, out RaycastHit hit, maxUseDistance, UseLayers))
         {
-            prompt.SetText("Press \"E\" to interact with " + door.itemName);
-            prompt.gameObject.SetActive(true);
-            //prompt.transform.position = hit.point - (hit.point - Camera.position).normalized * 0.01f;
-            //prompt.transform.rotation = Quaternion.LookRotation((hit.point - Camera.position).normalized);
+            if (hit.collider.TryGetComponent<Door>(out Door door))
+            {
+                prompt.SetText("Press \"E\" to interact with " + door.itemName);
+                prompt.gameObject.SetActive(true);
+                //prompt.transform.position = hit.point - (hit.point - Camera.position).normalized * 0.01f;
+                //prompt.transform.rotation = Quaternion.LookRotation((hit.point - Camera.position).normalized); }
+
+            }
+            else if (hit.collider.TryGetComponent<Button>(out Button button))
+            {
+                prompt.SetText("Press \"E\" to press " + button.itemName);
+                prompt.gameObject.SetActive(true);
+                //prompt.transform.position = hit.point - (hit.point - Camera.position).normalized * 0.01f;
+                //prompt.transform.rotation = Quaternion.LookRotation((hit.point - Camera.position).normalized);
+            }
+            else
+            {
+                prompt.gameObject.SetActive(false);
+            }
         }
         else
         {
@@ -44,6 +58,10 @@ public class PlayerActions : MonoBehaviour
                     door.Close();
                 else
                     door.Open(transform.position);
+            }
+            else if (hit.collider.TryGetComponent<Button>(out Button button))
+            {
+                button.Fire();
             }
         }
     }
