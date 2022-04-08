@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using StarterAssets;
+using UnityEngine.Audio;
 
 public class MenuController : MonoBehaviour
 {
@@ -38,6 +39,8 @@ public class MenuController : MonoBehaviour
             mouseControl.SetCursorState(true);
         }
     }
+
+    //Pause Menu
     public void Pause()
     {
         isPaused = true;
@@ -53,6 +56,8 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1;
         pauseUI.SetActive(false);
     }
+
+    //Transition for all menus
     public void TransitionScene(int level)
     {
         SceneManager.LoadScene(level);
@@ -72,5 +77,33 @@ public class MenuController : MonoBehaviour
     public void AddCountText(int playerIndex, int count)
     {
         countText[playerIndex].text = "Count: " + count.ToString();
+    }
+
+
+    //Options Menu
+    public AudioMixer MainAudioMix;
+    public void SetVolume(float volume)
+    {
+        MainAudioMix.SetFloat("volume", volume);
+        MainAudioMix.SetFloat("Volume", Mathf.Log10(volume) * 20);
+
+    }
+
+    public void ToggleFullscreen(bool fullscreen)
+    {
+
+        Screen.fullScreen = fullscreen;
+        if (Screen.fullScreen)
+        {
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        }
+        else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+        }
+    }
+    public void SetQuality(int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
     }
 }

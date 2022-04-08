@@ -663,7 +663,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPanel: {fileID: 0}
   countText: []
-  pauseUI: []
+  pauseUI: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1250752016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +717,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPanel: {fileID: 0}
   countText: []
-  pauseUI: []
+  pauseUI: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1250752019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -893,7 +895,7 @@ GameObject:
   - component: {fileID: 2036932842}
   - component: {fileID: 2036932841}
   m_Layer: 5
-  m_Name: Level1Button
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
