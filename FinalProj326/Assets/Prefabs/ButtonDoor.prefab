@@ -161,6 +161,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 3730274190554221554, guid: 6dd029b890f784243b433e8ba42a1e06, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3730274191029449416, guid: 6dd029b890f784243b433e8ba42a1e06, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd029b890f784243b433e8ba42a1e06, type: 3}
 --- !u!1 &7019205450269783563 stripped
