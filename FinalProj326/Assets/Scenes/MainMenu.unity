@@ -4578,7 +4578,7 @@ GameObject:
   - component: {fileID: 715094584}
   - component: {fileID: 715094583}
   m_Layer: 5
-  m_Name: Image
+  m_Name: MainMenuBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4600,8 +4600,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -181, y: 0.0000066757}
-  m_SizeDelta: {x: 260.41, y: 375}
+  m_AnchoredPosition: {x: -178.88957, y: 0.0000066757}
+  m_SizeDelta: {x: 264.6309, y: 427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715094583
 MonoBehaviour:
@@ -9174,14 +9174,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1464475770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb5adaa5c29a4183a1071b340e39c1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f8e2f0f881c54dd8acafb365125a30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeTextValue: {fileID: 61866550}
-  volumeSlider: {fileID: 195168688}
+  volumeSlider: {fileID: 1554282024}
   defaultVolume: 1
   confirmationPrompt: {fileID: 919374964}
-  controllerSenTextValue: {fileID: 662659141}
+  controllerSenTextValue: {fileID: 1807243519}
   controllerSenSlider: {fileID: 195168688}
   defaultSen: 4
   mainControllerSen: 4
@@ -9190,10 +9190,9 @@ MonoBehaviour:
   brightnessTextValue: {fileID: 1080333129}
   defaultBrightness: 1
   qualityDropdown: {fileID: 1364800428}
-  fullScreenToggle: {fileID: 2012727872}
-  _newGameLevel: Level1
+  fullScreenToggle: {fileID: 0}
+  _newGameLevel: level1
   noSavedGameDialog: {fileID: 722584903}
-  resolutionDropdown: {fileID: 1297170090}
 --- !u!4 &1464475772
 Transform:
   m_ObjectHideFlags: 0
@@ -11594,9 +11593,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1464475771}
+      - m_Target: {fileID: 1464475770}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ExitButton
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

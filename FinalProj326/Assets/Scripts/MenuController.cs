@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.Audio;
 
 public class MenuController : MonoBehaviour
 {
@@ -43,36 +42,6 @@ public class MenuController : MonoBehaviour
     private string levelToLoad;
     [SerializeField] private GameObject noSavedGameDialog = null;
 
-    [Header("Resolution Dropdowns")]
-    public TMP_Dropdown resolutionDropdown;
-    private Resolution[] resolutions;
-
-    private void Start()
-    {
-        resolutions = Screen.resolutions;
-
-        List<string> options = new List<string>();
-
-        int currentResolutionIndex = 0;
-
-        for (int i = 0; i < resolutions.Length; i++)
-        {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height);
-            {
-                currentResolutionIndex = i;
-
-            }
-        }
-    }
-
-    public void SetResolution(int resolutionIndex)
-    {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-    }
 
 
     //index 0: pause button, index 1: panel
@@ -187,9 +156,6 @@ public class MenuController : MonoBehaviour
             fullScreenToggle.isOn = false;
             Screen.fullScreen = false;
 
-            Resolution currentResolution = Screen.currentResolution;
-            Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
-            resolutionDropdown.value = resolutions.Length;
             GraphicsApply();
         }
     }
