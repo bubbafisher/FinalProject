@@ -34,3 +34,18 @@ public class SettingsMenu : MonoBehaviour
     }
 
 }
+
+//
+//public void OnPause()
+//{
+    //if (!isPaused)
+    //{
+        //eventSystem.GetComponent<MenuController>().Pause();
+
+    //}
+    //else
+    //{
+        //eventSystem.GetComponent<MenuController>().UnPause();
+    //}
+
+//}
