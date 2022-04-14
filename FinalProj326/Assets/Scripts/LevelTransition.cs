@@ -8,6 +8,7 @@ public class LevelTransition : MonoBehaviour
     public int sceneID;
     void OnTriggerEnter(Collider other)
     {
+        PlayerPrefs.SetString("SavedLevel", "lvl"+sceneID);
         SceneManager.LoadScene(sceneID);
     }
 }
