@@ -10,12 +10,6 @@ public class PlayerActions : MonoBehaviour
     public Transform Camera;
     public LayerMask UseLayers;
     public GameObject eventSystem;
-    private MenuController menuController;
-
-    void Start()
-    {
-        menuController = eventSystem.GetComponent<MenuController>();
-    }
 
     void Update()
     {
@@ -65,5 +59,9 @@ public class PlayerActions : MonoBehaviour
         }
     }
 
-   
+    public void OnPause()
+    {
+            eventSystem.GetComponent<PauseScript>().Pause();
+    }
+
 }

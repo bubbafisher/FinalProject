@@ -851,6 +851,7 @@ GameObject:
   - component: {fileID: 2717726894727305617}
   - component: {fileID: 8626089418039600303}
   - component: {fileID: 8383610166154587532}
+  - component: {fileID: 6791992132341096700}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -952,8 +953,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8e2f0f881c54dd8acafb365125a30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endPanel: {fileID: 0}
-  countText: []
+  volumeTextValue: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  defaultVolume: 1
+  confirmationPrompt: {fileID: 0}
+  controllerSenTextValue: {fileID: 0}
+  controllerSenSlider: {fileID: 0}
+  defaultSen: 4
+  mainControllerSen: 4
+  invertYToggle: {fileID: 0}
+  brightnessSlider: {fileID: 0}
+  brightnessTextValue: {fileID: 0}
+  defaultBrightness: 1
+  qualityDropdown: {fileID: 0}
+  fullScreenToggle: {fileID: 0}
+  _newGameLevel: 
+  noSavedGameDialog: {fileID: 0}
+--- !u!114 &6791992132341096700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179222729874016418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2454a45e25ba548c59bac5c3ebf19389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   pauseUI: {fileID: 7474310662881603958}
   player: {fileID: 8616685848737228372}
 --- !u!1 &7474310662881603958
