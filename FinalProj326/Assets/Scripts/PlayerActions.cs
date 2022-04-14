@@ -10,13 +10,6 @@ public class PlayerActions : MonoBehaviour
     public Transform Camera;
     public LayerMask UseLayers;
     public GameObject eventSystem;
-    private bool isPaused = false;
-    private MenuController menuController;
-
-    void Start()
-    {
-        menuController = eventSystem.GetComponent<MenuController>();
-    }
 
     void Update()
     {
@@ -68,15 +61,7 @@ public class PlayerActions : MonoBehaviour
 
     public void OnPause()
     {
-        if(!isPaused)
-        {
-            eventSystem.GetComponent<MenuController>().Pause();
-            
-        }
-        else
-        {
-            eventSystem.GetComponent<MenuController>().UnPause();  
-        }
-
+            eventSystem.GetComponent<PauseScript>().Pause();
     }
+
 }
