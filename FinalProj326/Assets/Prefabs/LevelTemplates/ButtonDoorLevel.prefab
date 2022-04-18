@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2322159282048231352, guid: 6e51f2fd493873f4680cef11bd924d8d, type: 3}
       propertyPath: m_Name
-      value: Level
+      value: ButtonDoorLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909103308272541561, guid: 6e51f2fd493873f4680cef11bd924d8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e51f2fd493873f4680cef11bd924d8d, type: 3}
@@ -69,6 +73,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4018630065527827203}
     m_Modifications:
+    - target: {fileID: 7780398130753718218, guid: 8327c0a61d2e8cf4ca59d35a63662592, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780398130753718218, guid: 8327c0a61d2e8cf4ca59d35a63662592, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7780398130753718218, guid: 8327c0a61d2e8cf4ca59d35a63662592, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.945
+      objectReference: {fileID: 0}
     - target: {fileID: 7780398131873227024, guid: 8327c0a61d2e8cf4ca59d35a63662592, type: 3}
       propertyPath: m_RootOrder
       value: 6
