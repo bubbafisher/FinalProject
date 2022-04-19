@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 761315913899540607, guid: 34b5e87fa7ee64145b5c098b267cc15c, type: 3}
+      propertyPath: itemName
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: 761315914607065408, guid: 34b5e87fa7ee64145b5c098b267cc15c, type: 3}
       propertyPath: m_Mesh
       value: 
