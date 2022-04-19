@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7682d5ae525f423292e9b574cadb8f8
+guid: a389160318c29455da0ec458fdcb14f8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,9 +9,9 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - 3rd Man
+  - Bastarda
   fallbackFontReferences:
-  - {fileID: 12800000, guid: 44d93a3be5f8c43e69ab7ec0e8ae591b, type: 3}
+  - {fileID: 12800000, guid: 60a9ab9cae29343a29357fb8b5122958, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
