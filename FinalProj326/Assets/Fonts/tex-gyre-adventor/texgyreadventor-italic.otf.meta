@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ba5154bd5850a48a9a06a229c2cf7950
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TeX Gyre Adventor
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a5b8d4f9fd5f2420cbcc09ab32d6e6ee, type: 3}
+  - {fileID: 12800000, guid: a553b2ce489844e3db356a016b48823f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
