@@ -49,7 +49,6 @@ public class PauseScript : MonoBehaviour
     }
     public void TransitionScene(int level)
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene(level);
     }
 }
