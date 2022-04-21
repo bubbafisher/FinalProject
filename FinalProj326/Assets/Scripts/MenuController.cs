@@ -49,6 +49,7 @@ public class MenuController : MonoBehaviour
     public void NewGameDialogYes()
     {
         SceneManager.LoadScene(_newGameLevel);
+        PlayerPrefs.SetString("SavedLevel", "level1");
     }
     public void LoadGameDialogYes()
     {

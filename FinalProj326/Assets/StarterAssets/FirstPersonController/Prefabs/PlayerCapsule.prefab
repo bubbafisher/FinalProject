@@ -196,8 +196,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8383610166154587532}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 6791992132341096700}
+        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
         m_MethodName: UnPause
         m_Mode: 1
         m_Arguments:
@@ -692,8 +692,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8383610166154587532}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+      - m_Target: {fileID: 6791992132341096700}
+        m_TargetAssemblyTypeName: PauseScript, Assembly-CSharp
         m_MethodName: TransitionScene
         m_Mode: 3
         m_Arguments:
