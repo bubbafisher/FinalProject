@@ -9,6 +9,7 @@ public class LevelTransition : MonoBehaviour
 {
     public int sceneID;
     public bool finalLevel = false;
+    public GameObject pauseMenuScript;
     void OnTriggerEnter(Collider other)
     {
         if (!finalLevel)
@@ -18,8 +19,8 @@ public class LevelTransition : MonoBehaviour
         }
         else 
         {
-            other.gameObject.GetComponent<PlayerInput>().enabled = false;
-            other.gameObject.GetComponent<StarterAssetsInputs>().SetCursorState(false);
+            pauseMenuScript.GetComponent<PauseScript>().Pause();
+            Time.timeScale = 1;
             SceneManager.LoadScene("EndGame");
         }
         
