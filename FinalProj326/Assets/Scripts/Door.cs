@@ -12,11 +12,13 @@ public class Door : Interactable
     private float rotationAmount = 90f, forwardDirection = 0;
     private Vector3 StartRotation, Forward;
     private Coroutine AnimationCoroutine;
+    private AudioSource openSound;
     // Start is called before the first frame update
     void Awake()
     {
         StartRotation = transform.rotation.eulerAngles;
         Forward = transform.right;
+        openSound = this.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class Door : Interactable
     {
         if(!isOpen)
         {
+            openSound.Play();
             if(AnimationCoroutine != null)
             {
                 StopCoroutine(AnimationCoroutine);
@@ -54,12 +57,14 @@ public class Door : Interactable
             yield return null;
             time += Time.deltaTime * speed;
         }
+        openSound.Stop();
     }
 
     public void Close()
     {
         if (isOpen)
         {
+            openSound.Play();
             if (AnimationCoroutine != null)
             {
                 StopCoroutine(AnimationCoroutine);
@@ -83,5 +88,6 @@ public class Door : Interactable
             yield return null;
             time += Time.deltaTime * speed;
         }
+        openSound.Stop();
     }
 }
